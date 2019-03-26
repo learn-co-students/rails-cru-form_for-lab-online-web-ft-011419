@@ -1,2 +1,8 @@
 <h1>Genres#new</h1>
 <p>Find me in app/views/genres/new.html.erb</p>
+
+<%= form_for @genre do |g|%>
+    <%=g.label :name%>
+    <%=g.text_field :name%>
+    <%=g.submit%>
+    <%end%>

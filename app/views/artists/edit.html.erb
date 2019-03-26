@@ -1,2 +1,12 @@
 <h1>Artists#edit</h1>
 <p>Find me in app/views/artists/edit.html.erb</p>
+
+<h1>Edit Form</h1>
+
+<%= form_for @artist do |a|%>
+    <%=a.label :name%>
+    <%=a.text_field :name%>
+    <%=a.label :bio%>
+    <%=a.text_field :bio%>
+    <%=a.submit%>
+    <%end%>
